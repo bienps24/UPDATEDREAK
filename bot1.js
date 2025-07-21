@@ -4,7 +4,7 @@ const pool = require('./db');
 require('dotenv').config();
 
 const bot = new Telegraf(process.env.BOT1_TOKEN);
-const ADMIN_IDS = ['5521402866'];
+const ADMIN_IDS = ['6392541600'];
 const warnedChannels = new Set();
 
 bot.on('channel_post', async (ctx) => {
