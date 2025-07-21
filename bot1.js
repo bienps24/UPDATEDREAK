@@ -1,4 +1,3 @@
-
 const { Telegraf } = require('telegraf');
 const pool = require('./db');
 require('dotenv').config();
