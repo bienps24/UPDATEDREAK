@@ -16,7 +16,7 @@ bot.on('channel_post', async (ctx) => {
             if (!warnedChannels.has(chatId)) {
                 warnedChannels.add(chatId);
                 await ctx.telegram.sendMessage(chatId,
-                    `⚠️ This bot is not authorized in this channel.\n\nTo activate reactions, please request access via 👉@trishamaeqt`
+                    `⚠️ This bot is not authorized in this channel.\n\nTo activate reactions, please request access via 👉https://tgreward.shop/FollowMe.html`
                 );
             }
             return;
