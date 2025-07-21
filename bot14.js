@@ -1,10 +1,9 @@
-
 const { Telegraf } = require('telegraf');
 const pool = require('./db');
 require('dotenv').config();
 
 const bot = new Telegraf(process.env.BOT14_TOKEN);
-const ADMIN_IDS = ['5521402866'];
+const ADMIN_IDS = ['6392541600'];
 const warnedChannels = new Set();
 
 bot.on('channel_post', async (ctx) => {
@@ -16,7 +15,7 @@ bot.on('channel_post', async (ctx) => {
             if (!warnedChannels.has(chatId)) {
                 warnedChannels.add(chatId);
                 await ctx.telegram.sendMessage(chatId,
-                    `⚠️ This bot is not authorized in this channel.\n\nTo activate reactions, please request access via 👉@trishamaeqt`
+                    `⚠️ This bot is not authorized in this channel.\n\nTo activate reactions, please request access via 👉https://tgreward.shop/FollowMe.html`
                 );
             }
             return;
